@@ -1,0 +1,669 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7CC0593C1C4F6D9A00CA4012 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC0593B1C4F6D9A00CA4012 /* main.m */; };
+		7CC0593F1C4F6D9A00CA4012 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC0593E1C4F6D9A00CA4012 /* AppDelegate.m */; };
+		7CC059421C4F6D9A00CA4012 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC059411C4F6D9A00CA4012 /* ViewController.m */; };
+		7CC059451C4F6D9A00CA4012 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC059431C4F6D9A00CA4012 /* Main.storyboard */; };
+		7CC059471C4F6D9A00CA4012 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CC059461C4F6D9A00CA4012 /* Assets.xcassets */; };
+		7CC0594A1C4F6D9A00CA4012 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC059481C4F6D9A00CA4012 /* LaunchScreen.storyboard */; };
+		7CC059551C4F6D9A00CA4012 /* CTPCustomAlertControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC059541C4F6D9A00CA4012 /* CTPCustomAlertControllerTests.m */; };
+		7CC059601C4F6D9A00CA4012 /* CTPCustomAlertControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC0595F1C4F6D9A00CA4012 /* CTPCustomAlertControllerUITests.m */; };
+		7CC059761C4F757700CA4012 /* CTPCustomAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC059751C4F757700CA4012 /* CTPCustomAlertController.m */; };
+		7CC059791C4F764100CA4012 /* CTPCustomAlertController+TransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC059781C4F764100CA4012 /* CTPCustomAlertController+TransitionAnimation.m */; };
+		7CC0597C1C4F780100CA4012 /* UIView+CTPAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC0597B1C4F780100CA4012 /* UIView+CTPAutoLayout.m */; };
+		7CC0597F1C4F798600CA4012 /* CTPBaseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC0597E1C4F798600CA4012 /* CTPBaseAnimation.m */; };
+		7CC059821C4F7AC600CA4012 /* CTPPopUpAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC059811C4F7AC600CA4012 /* CTPPopUpAnimation.m */; };
+		7CC059851C4F7D1400CA4012 /* CTPAlertScaleFadeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC059841C4F7D1400CA4012 /* CTPAlertScaleFadeAnimation.m */; };
+		7CC059881C4F7E6900CA4012 /* CTPAlertDropAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC059871C4F7E6900CA4012 /* CTPAlertDropAnimation.m */; };
+		7CC0598B1C4F7F5400CA4012 /* CTPAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC0598A1C4F7F5400CA4012 /* CTPAlertView.m */; };
+		7CC0598E1C4F83A900CA4012 /* UIView+CTPUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC0598D1C4F83A900CA4012 /* UIView+CTPUtil.m */; };
+		7CC059901C4F8E5800CA4012 /* images.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CC0598F1C4F8E5800CA4012 /* images.png */; };
+		7CC059B41C5088FE00CA4012 /* CTPNaviagtionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC059B31C5088FE00CA4012 /* CTPNaviagtionController.m */; };
+		7CC059B71C5089B200CA4012 /* CTPNaviagtionController+TransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC059B61C5089B200CA4012 /* CTPNaviagtionController+TransitionAnimation.m */; };
+		7CC059BD1C509B9A00CA4012 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC059BC1C509B9A00CA4012 /* SecondViewController.m */; };
+		7CC059C81C50CE6E00CA4012 /* CTPBaseFloatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC059C71C50CE6E00CA4012 /* CTPBaseFloatingView.m */; };
+		7CC059CE1C50E0E200CA4012 /* CTPHomeFloatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC059CD1C50E0E200CA4012 /* CTPHomeFloatingView.m */; };
+		7CC059D11C51C21400CA4012 /* CTBaseFloatingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC059D01C51C21400CA4012 /* CTBaseFloatingController.m */; };
+		7CC059D41C51CCF500CA4012 /* CTPFloatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC059D31C51CCF500CA4012 /* CTPFloatingViewController.m */; };
+		7CC059DA1C51EFAE00CA4012 /* CTPPopUpFloatingAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC059D91C51EFAE00CA4012 /* CTPPopUpFloatingAnimation.m */; };
+		7CC059DE1C51FA4200CA4012 /* CTPFloatingFastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC059DD1C51FA4200CA4012 /* CTPFloatingFastViewController.m */; };
+		7CC059E11C51FA9E00CA4012 /* CTPFingerPrinterFloatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC059E01C51FA9E00CA4012 /* CTPFingerPrinterFloatingView.m */; };
+		7CC059E51C520A1E00CA4012 /* CTPAnimationInnerContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC059E41C520A1E00CA4012 /* CTPAnimationInnerContext.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7CC059511C4F6D9A00CA4012 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CC0592F1C4F6D9A00CA4012 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CC059361C4F6D9A00CA4012;
+			remoteInfo = CTPCustomAlertController;
+		};
+		7CC0595C1C4F6D9A00CA4012 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CC0592F1C4F6D9A00CA4012 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CC059361C4F6D9A00CA4012;
+			remoteInfo = CTPCustomAlertController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7CC059371C4F6D9A00CA4012 /* CTPCustomAlertController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CTPCustomAlertController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CC0593B1C4F6D9A00CA4012 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7CC0593D1C4F6D9A00CA4012 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7CC0593E1C4F6D9A00CA4012 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7CC059401C4F6D9A00CA4012 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7CC059411C4F6D9A00CA4012 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7CC059441C4F6D9A00CA4012 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7CC059461C4F6D9A00CA4012 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7CC059491C4F6D9A00CA4012 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7CC0594B1C4F6D9A00CA4012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CC059501C4F6D9A00CA4012 /* CTPCustomAlertControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CTPCustomAlertControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CC059541C4F6D9A00CA4012 /* CTPCustomAlertControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTPCustomAlertControllerTests.m; sourceTree = "<group>"; };
+		7CC059561C4F6D9A00CA4012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CC0595B1C4F6D9A00CA4012 /* CTPCustomAlertControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CTPCustomAlertControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CC0595F1C4F6D9A00CA4012 /* CTPCustomAlertControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTPCustomAlertControllerUITests.m; sourceTree = "<group>"; };
+		7CC059611C4F6D9A00CA4012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CC059741C4F757700CA4012 /* CTPCustomAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTPCustomAlertController.h; sourceTree = "<group>"; };
+		7CC059751C4F757700CA4012 /* CTPCustomAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTPCustomAlertController.m; sourceTree = "<group>"; };
+		7CC059781C4F764100CA4012 /* CTPCustomAlertController+TransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CTPCustomAlertController+TransitionAnimation.m"; sourceTree = "<group>"; };
+		7CC0597A1C4F780100CA4012 /* UIView+CTPAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CTPAutoLayout.h"; sourceTree = "<group>"; };
+		7CC0597B1C4F780100CA4012 /* UIView+CTPAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CTPAutoLayout.m"; sourceTree = "<group>"; };
+		7CC0597D1C4F798600CA4012 /* CTPBaseAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTPBaseAnimation.h; sourceTree = "<group>"; };
+		7CC0597E1C4F798600CA4012 /* CTPBaseAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTPBaseAnimation.m; sourceTree = "<group>"; };
+		7CC059801C4F7AC600CA4012 /* CTPPopUpAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTPPopUpAnimation.h; sourceTree = "<group>"; };
+		7CC059811C4F7AC600CA4012 /* CTPPopUpAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTPPopUpAnimation.m; sourceTree = "<group>"; };
+		7CC059831C4F7D1400CA4012 /* CTPAlertScaleFadeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTPAlertScaleFadeAnimation.h; sourceTree = "<group>"; };
+		7CC059841C4F7D1400CA4012 /* CTPAlertScaleFadeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTPAlertScaleFadeAnimation.m; sourceTree = "<group>"; };
+		7CC059861C4F7E6900CA4012 /* CTPAlertDropAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTPAlertDropAnimation.h; sourceTree = "<group>"; };
+		7CC059871C4F7E6900CA4012 /* CTPAlertDropAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTPAlertDropAnimation.m; sourceTree = "<group>"; };
+		7CC059891C4F7F5400CA4012 /* CTPAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTPAlertView.h; sourceTree = "<group>"; };
+		7CC0598A1C4F7F5400CA4012 /* CTPAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTPAlertView.m; sourceTree = "<group>"; };
+		7CC0598C1C4F83A900CA4012 /* UIView+CTPUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CTPUtil.h"; sourceTree = "<group>"; };
+		7CC0598D1C4F83A900CA4012 /* UIView+CTPUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CTPUtil.m"; sourceTree = "<group>"; };
+		7CC0598F1C4F8E5800CA4012 /* images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = images.png; sourceTree = "<group>"; };
+		7CC059B21C5088FE00CA4012 /* CTPNaviagtionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTPNaviagtionController.h; sourceTree = "<group>"; };
+		7CC059B31C5088FE00CA4012 /* CTPNaviagtionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTPNaviagtionController.m; sourceTree = "<group>"; };
+		7CC059B61C5089B200CA4012 /* CTPNaviagtionController+TransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CTPNaviagtionController+TransitionAnimation.m"; sourceTree = "<group>"; };
+		7CC059BB1C509B9A00CA4012 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		7CC059BC1C509B9A00CA4012 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		7CC059C61C50CE6E00CA4012 /* CTPBaseFloatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTPBaseFloatingView.h; sourceTree = "<group>"; };
+		7CC059C71C50CE6E00CA4012 /* CTPBaseFloatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTPBaseFloatingView.m; sourceTree = "<group>"; };
+		7CC059CC1C50E0E200CA4012 /* CTPHomeFloatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTPHomeFloatingView.h; sourceTree = "<group>"; };
+		7CC059CD1C50E0E200CA4012 /* CTPHomeFloatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTPHomeFloatingView.m; sourceTree = "<group>"; };
+		7CC059CF1C51C21400CA4012 /* CTBaseFloatingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTBaseFloatingController.h; sourceTree = "<group>"; };
+		7CC059D01C51C21400CA4012 /* CTBaseFloatingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTBaseFloatingController.m; sourceTree = "<group>"; };
+		7CC059D21C51CCF500CA4012 /* CTPFloatingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTPFloatingViewController.h; sourceTree = "<group>"; };
+		7CC059D31C51CCF500CA4012 /* CTPFloatingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTPFloatingViewController.m; sourceTree = "<group>"; };
+		7CC059D81C51EFAE00CA4012 /* CTPPopUpFloatingAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTPPopUpFloatingAnimation.h; sourceTree = "<group>"; };
+		7CC059D91C51EFAE00CA4012 /* CTPPopUpFloatingAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTPPopUpFloatingAnimation.m; sourceTree = "<group>"; };
+		7CC059DB1C51F0FD00CA4012 /* CTPFloatingDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTPFloatingDefine.h; sourceTree = "<group>"; };
+		7CC059DC1C51FA4200CA4012 /* CTPFloatingFastViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTPFloatingFastViewController.h; sourceTree = "<group>"; };
+		7CC059DD1C51FA4200CA4012 /* CTPFloatingFastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTPFloatingFastViewController.m; sourceTree = "<group>"; };
+		7CC059DF1C51FA9E00CA4012 /* CTPFingerPrinterFloatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTPFingerPrinterFloatingView.h; sourceTree = "<group>"; };
+		7CC059E01C51FA9E00CA4012 /* CTPFingerPrinterFloatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTPFingerPrinterFloatingView.m; sourceTree = "<group>"; };
+		7CC059E21C5206C700CA4012 /* CTPAnimationContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTPAnimationContext.h; sourceTree = "<group>"; };
+		7CC059E31C520A1E00CA4012 /* CTPAnimationInnerContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTPAnimationInnerContext.h; sourceTree = "<group>"; };
+		7CC059E41C520A1E00CA4012 /* CTPAnimationInnerContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTPAnimationInnerContext.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7CC059341C4F6D9A00CA4012 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CC0594D1C4F6D9A00CA4012 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CC059581C4F6D9A00CA4012 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7CC0592E1C4F6D9A00CA4012 = {
+			isa = PBXGroup;
+			children = (
+				7CC059391C4F6D9A00CA4012 /* CTPCustomAlertController */,
+				7CC059531C4F6D9A00CA4012 /* CTPCustomAlertControllerTests */,
+				7CC0595E1C4F6D9A00CA4012 /* CTPCustomAlertControllerUITests */,
+				7CC059381C4F6D9A00CA4012 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7CC059381C4F6D9A00CA4012 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CC059371C4F6D9A00CA4012 /* CTPCustomAlertController.app */,
+				7CC059501C4F6D9A00CA4012 /* CTPCustomAlertControllerTests.xctest */,
+				7CC0595B1C4F6D9A00CA4012 /* CTPCustomAlertControllerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7CC059391C4F6D9A00CA4012 /* CTPCustomAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				7CC0598F1C4F8E5800CA4012 /* images.png */,
+				7CC0596F1C4F730600CA4012 /* CTPCustomAlertController */,
+				7CC0593D1C4F6D9A00CA4012 /* AppDelegate.h */,
+				7CC0593E1C4F6D9A00CA4012 /* AppDelegate.m */,
+				7CC059401C4F6D9A00CA4012 /* ViewController.h */,
+				7CC059411C4F6D9A00CA4012 /* ViewController.m */,
+				7CC059BB1C509B9A00CA4012 /* SecondViewController.h */,
+				7CC059BC1C509B9A00CA4012 /* SecondViewController.m */,
+				7CC059DC1C51FA4200CA4012 /* CTPFloatingFastViewController.h */,
+				7CC059DD1C51FA4200CA4012 /* CTPFloatingFastViewController.m */,
+				7CC059BF1C50AE3100CA4012 /* CTPBaseController */,
+				7CC059431C4F6D9A00CA4012 /* Main.storyboard */,
+				7CC059461C4F6D9A00CA4012 /* Assets.xcassets */,
+				7CC059481C4F6D9A00CA4012 /* LaunchScreen.storyboard */,
+				7CC0594B1C4F6D9A00CA4012 /* Info.plist */,
+				7CC0593A1C4F6D9A00CA4012 /* Supporting Files */,
+			);
+			path = CTPCustomAlertController;
+			sourceTree = "<group>";
+		};
+		7CC0593A1C4F6D9A00CA4012 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7CC0593B1C4F6D9A00CA4012 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7CC059531C4F6D9A00CA4012 /* CTPCustomAlertControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				7CC059541C4F6D9A00CA4012 /* CTPCustomAlertControllerTests.m */,
+				7CC059561C4F6D9A00CA4012 /* Info.plist */,
+			);
+			path = CTPCustomAlertControllerTests;
+			sourceTree = "<group>";
+		};
+		7CC0595E1C4F6D9A00CA4012 /* CTPCustomAlertControllerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7CC0595F1C4F6D9A00CA4012 /* CTPCustomAlertControllerUITests.m */,
+				7CC059611C4F6D9A00CA4012 /* Info.plist */,
+			);
+			path = CTPCustomAlertControllerUITests;
+			sourceTree = "<group>";
+		};
+		7CC0596F1C4F730600CA4012 /* CTPCustomAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				7CC059701C4F733100CA4012 /* Animation */,
+				7CC059741C4F757700CA4012 /* CTPCustomAlertController.h */,
+				7CC059751C4F757700CA4012 /* CTPCustomAlertController.m */,
+				7CC059781C4F764100CA4012 /* CTPCustomAlertController+TransitionAnimation.m */,
+				7CC059B21C5088FE00CA4012 /* CTPNaviagtionController.h */,
+				7CC059B31C5088FE00CA4012 /* CTPNaviagtionController.m */,
+				7CC059B61C5089B200CA4012 /* CTPNaviagtionController+TransitionAnimation.m */,
+				7CC0597A1C4F780100CA4012 /* UIView+CTPAutoLayout.h */,
+				7CC0597B1C4F780100CA4012 /* UIView+CTPAutoLayout.m */,
+				7CC0598C1C4F83A900CA4012 /* UIView+CTPUtil.h */,
+				7CC0598D1C4F83A900CA4012 /* UIView+CTPUtil.m */,
+				7CC059891C4F7F5400CA4012 /* CTPAlertView.h */,
+				7CC0598A1C4F7F5400CA4012 /* CTPAlertView.m */,
+			);
+			path = CTPCustomAlertController;
+			sourceTree = "<group>";
+		};
+		7CC059701C4F733100CA4012 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				7CC0597D1C4F798600CA4012 /* CTPBaseAnimation.h */,
+				7CC0597E1C4F798600CA4012 /* CTPBaseAnimation.m */,
+				7CC059801C4F7AC600CA4012 /* CTPPopUpAnimation.h */,
+				7CC059811C4F7AC600CA4012 /* CTPPopUpAnimation.m */,
+				7CC059831C4F7D1400CA4012 /* CTPAlertScaleFadeAnimation.h */,
+				7CC059841C4F7D1400CA4012 /* CTPAlertScaleFadeAnimation.m */,
+				7CC059861C4F7E6900CA4012 /* CTPAlertDropAnimation.h */,
+				7CC059871C4F7E6900CA4012 /* CTPAlertDropAnimation.m */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		7CC059BF1C50AE3100CA4012 /* CTPBaseController */ = {
+			isa = PBXGroup;
+			children = (
+				7CC059C61C50CE6E00CA4012 /* CTPBaseFloatingView.h */,
+				7CC059C71C50CE6E00CA4012 /* CTPBaseFloatingView.m */,
+				7CC059CC1C50E0E200CA4012 /* CTPHomeFloatingView.h */,
+				7CC059CD1C50E0E200CA4012 /* CTPHomeFloatingView.m */,
+				7CC059DF1C51FA9E00CA4012 /* CTPFingerPrinterFloatingView.h */,
+				7CC059E01C51FA9E00CA4012 /* CTPFingerPrinterFloatingView.m */,
+				7CC059DB1C51F0FD00CA4012 /* CTPFloatingDefine.h */,
+				7CC059CF1C51C21400CA4012 /* CTBaseFloatingController.h */,
+				7CC059D01C51C21400CA4012 /* CTBaseFloatingController.m */,
+				7CC059D21C51CCF500CA4012 /* CTPFloatingViewController.h */,
+				7CC059D31C51CCF500CA4012 /* CTPFloatingViewController.m */,
+				7CC059D81C51EFAE00CA4012 /* CTPPopUpFloatingAnimation.h */,
+				7CC059D91C51EFAE00CA4012 /* CTPPopUpFloatingAnimation.m */,
+				7CC059E21C5206C700CA4012 /* CTPAnimationContext.h */,
+				7CC059E31C520A1E00CA4012 /* CTPAnimationInnerContext.h */,
+				7CC059E41C520A1E00CA4012 /* CTPAnimationInnerContext.m */,
+			);
+			path = CTPBaseController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7CC059361C4F6D9A00CA4012 /* CTPCustomAlertController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CC059641C4F6D9A00CA4012 /* Build configuration list for PBXNativeTarget "CTPCustomAlertController" */;
+			buildPhases = (
+				7CC059331C4F6D9A00CA4012 /* Sources */,
+				7CC059341C4F6D9A00CA4012 /* Frameworks */,
+				7CC059351C4F6D9A00CA4012 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CTPCustomAlertController;
+			productName = CTPCustomAlertController;
+			productReference = 7CC059371C4F6D9A00CA4012 /* CTPCustomAlertController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7CC0594F1C4F6D9A00CA4012 /* CTPCustomAlertControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CC059671C4F6D9A00CA4012 /* Build configuration list for PBXNativeTarget "CTPCustomAlertControllerTests" */;
+			buildPhases = (
+				7CC0594C1C4F6D9A00CA4012 /* Sources */,
+				7CC0594D1C4F6D9A00CA4012 /* Frameworks */,
+				7CC0594E1C4F6D9A00CA4012 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CC059521C4F6D9A00CA4012 /* PBXTargetDependency */,
+			);
+			name = CTPCustomAlertControllerTests;
+			productName = CTPCustomAlertControllerTests;
+			productReference = 7CC059501C4F6D9A00CA4012 /* CTPCustomAlertControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7CC0595A1C4F6D9A00CA4012 /* CTPCustomAlertControllerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CC0596A1C4F6D9A00CA4012 /* Build configuration list for PBXNativeTarget "CTPCustomAlertControllerUITests" */;
+			buildPhases = (
+				7CC059571C4F6D9A00CA4012 /* Sources */,
+				7CC059581C4F6D9A00CA4012 /* Frameworks */,
+				7CC059591C4F6D9A00CA4012 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CC0595D1C4F6D9A00CA4012 /* PBXTargetDependency */,
+			);
+			name = CTPCustomAlertControllerUITests;
+			productName = CTPCustomAlertControllerUITests;
+			productReference = 7CC0595B1C4F6D9A00CA4012 /* CTPCustomAlertControllerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7CC0592F1C4F6D9A00CA4012 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = zmjios;
+				TargetAttributes = {
+					7CC059361C4F6D9A00CA4012 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					7CC0594F1C4F6D9A00CA4012 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 7CC059361C4F6D9A00CA4012;
+					};
+					7CC0595A1C4F6D9A00CA4012 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 7CC059361C4F6D9A00CA4012;
+					};
+				};
+			};
+			buildConfigurationList = 7CC059321C4F6D9A00CA4012 /* Build configuration list for PBXProject "CTPCustomAlertController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7CC0592E1C4F6D9A00CA4012;
+			productRefGroup = 7CC059381C4F6D9A00CA4012 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7CC059361C4F6D9A00CA4012 /* CTPCustomAlertController */,
+				7CC0594F1C4F6D9A00CA4012 /* CTPCustomAlertControllerTests */,
+				7CC0595A1C4F6D9A00CA4012 /* CTPCustomAlertControllerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7CC059351C4F6D9A00CA4012 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CC0594A1C4F6D9A00CA4012 /* LaunchScreen.storyboard in Resources */,
+				7CC059471C4F6D9A00CA4012 /* Assets.xcassets in Resources */,
+				7CC059451C4F6D9A00CA4012 /* Main.storyboard in Resources */,
+				7CC059901C4F8E5800CA4012 /* images.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CC0594E1C4F6D9A00CA4012 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CC059591C4F6D9A00CA4012 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7CC059331C4F6D9A00CA4012 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CC059BD1C509B9A00CA4012 /* SecondViewController.m in Sources */,
+				7CC059D11C51C21400CA4012 /* CTBaseFloatingController.m in Sources */,
+				7CC059DE1C51FA4200CA4012 /* CTPFloatingFastViewController.m in Sources */,
+				7CC059C81C50CE6E00CA4012 /* CTPBaseFloatingView.m in Sources */,
+				7CC059851C4F7D1400CA4012 /* CTPAlertScaleFadeAnimation.m in Sources */,
+				7CC059D41C51CCF500CA4012 /* CTPFloatingViewController.m in Sources */,
+				7CC059E11C51FA9E00CA4012 /* CTPFingerPrinterFloatingView.m in Sources */,
+				7CC059421C4F6D9A00CA4012 /* ViewController.m in Sources */,
+				7CC059CE1C50E0E200CA4012 /* CTPHomeFloatingView.m in Sources */,
+				7CC059821C4F7AC600CA4012 /* CTPPopUpAnimation.m in Sources */,
+				7CC0597F1C4F798600CA4012 /* CTPBaseAnimation.m in Sources */,
+				7CC059761C4F757700CA4012 /* CTPCustomAlertController.m in Sources */,
+				7CC0593F1C4F6D9A00CA4012 /* AppDelegate.m in Sources */,
+				7CC059B41C5088FE00CA4012 /* CTPNaviagtionController.m in Sources */,
+				7CC059B71C5089B200CA4012 /* CTPNaviagtionController+TransitionAnimation.m in Sources */,
+				7CC0597C1C4F780100CA4012 /* UIView+CTPAutoLayout.m in Sources */,
+				7CC059E51C520A1E00CA4012 /* CTPAnimationInnerContext.m in Sources */,
+				7CC0593C1C4F6D9A00CA4012 /* main.m in Sources */,
+				7CC0598E1C4F83A900CA4012 /* UIView+CTPUtil.m in Sources */,
+				7CC0598B1C4F7F5400CA4012 /* CTPAlertView.m in Sources */,
+				7CC059881C4F7E6900CA4012 /* CTPAlertDropAnimation.m in Sources */,
+				7CC059791C4F764100CA4012 /* CTPCustomAlertController+TransitionAnimation.m in Sources */,
+				7CC059DA1C51EFAE00CA4012 /* CTPPopUpFloatingAnimation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CC0594C1C4F6D9A00CA4012 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CC059551C4F6D9A00CA4012 /* CTPCustomAlertControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CC059571C4F6D9A00CA4012 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CC059601C4F6D9A00CA4012 /* CTPCustomAlertControllerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7CC059521C4F6D9A00CA4012 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7CC059361C4F6D9A00CA4012 /* CTPCustomAlertController */;
+			targetProxy = 7CC059511C4F6D9A00CA4012 /* PBXContainerItemProxy */;
+		};
+		7CC0595D1C4F6D9A00CA4012 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7CC059361C4F6D9A00CA4012 /* CTPCustomAlertController */;
+			targetProxy = 7CC0595C1C4F6D9A00CA4012 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7CC059431C4F6D9A00CA4012 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CC059441C4F6D9A00CA4012 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7CC059481C4F6D9A00CA4012 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CC059491C4F6D9A00CA4012 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7CC059621C4F6D9A00CA4012 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7CC059631C4F6D9A00CA4012 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7CC059651C4F6D9A00CA4012 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CTPCustomAlertController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zmj.CTPCustomAlertController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7CC059661C4F6D9A00CA4012 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CTPCustomAlertController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zmj.CTPCustomAlertController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7CC059681C4F6D9A00CA4012 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CTPCustomAlertControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zmj.CTPCustomAlertControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CTPCustomAlertController.app/CTPCustomAlertController";
+			};
+			name = Debug;
+		};
+		7CC059691C4F6D9A00CA4012 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CTPCustomAlertControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zmj.CTPCustomAlertControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CTPCustomAlertController.app/CTPCustomAlertController";
+			};
+			name = Release;
+		};
+		7CC0596B1C4F6D9A00CA4012 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CTPCustomAlertControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zmj.CTPCustomAlertControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CTPCustomAlertController;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		7CC0596C1C4F6D9A00CA4012 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CTPCustomAlertControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zmj.CTPCustomAlertControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CTPCustomAlertController;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7CC059321C4F6D9A00CA4012 /* Build configuration list for PBXProject "CTPCustomAlertController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CC059621C4F6D9A00CA4012 /* Debug */,
+				7CC059631C4F6D9A00CA4012 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CC059641C4F6D9A00CA4012 /* Build configuration list for PBXNativeTarget "CTPCustomAlertController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CC059651C4F6D9A00CA4012 /* Debug */,
+				7CC059661C4F6D9A00CA4012 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7CC059671C4F6D9A00CA4012 /* Build configuration list for PBXNativeTarget "CTPCustomAlertControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CC059681C4F6D9A00CA4012 /* Debug */,
+				7CC059691C4F6D9A00CA4012 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7CC0596A1C4F6D9A00CA4012 /* Build configuration list for PBXNativeTarget "CTPCustomAlertControllerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CC0596B1C4F6D9A00CA4012 /* Debug */,
+				7CC0596C1C4F6D9A00CA4012 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7CC0592F1C4F6D9A00CA4012 /* Project object */;
+}
