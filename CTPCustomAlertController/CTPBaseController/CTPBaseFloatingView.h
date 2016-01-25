@@ -78,8 +78,11 @@ typedef NS_ENUM(NSInteger,CTPFloatingViewType) {
 - (NSInteger)floatingViewNumberOfRows;
 - (CGFloat)floatingView:(CTPBaseFloatingView *)floatingView heightForRowAtIndexPath:(NSIndexPath *)indexPath;
 - (UIView *)floatingViewBottomSubView:(CTPBaseFloatingView *)floatingView;
+- (void)floatingView:(CTPBaseFloatingView *)floatingView willDisplayCell:(UITableViewCell *)cell forIndexPath:(NSIndexPath *)indexPath;
 
 - (NSString *)floatingViewBottomInfo:(CTPBaseFloatingView *)floatingView;
+
+
 
 
 

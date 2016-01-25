@@ -31,6 +31,11 @@
     [self drawLineInPosition:postion color:color width:SINGLE_LINE_WIDTH];
 }
 
+- (void)drawLineInPosition:(CTLinePosition)postion edge:(UIEdgeInsets)edge
+{
+    [self drawLineInPosition:postion color:SINGLE_LINE_DEFAULT_COLOR edge:edge];
+}
+
 
 - (void)drawLineInPosition:(CTLinePosition)postion color:(UIColor *)color width:(CGFloat)width
 {
@@ -93,7 +98,7 @@
     if (postion & CTLinePositionBottom) {
         //edge.top would be invalid
         [path moveToPoint:CGPointMake( 0 + edge.left, CGRectGetHeight(self.bounds)- width - edge.bottom - pixelAdjustOffset)];
-        [path addLineToPoint:CGPointMake(CGRectGetWidth(self.bounds)- edge.right,CGRectGetHeight(self.bounds)- width -  edge.bottom - pixelAdjustOffset)];
+        [path addLineToPoint:CGPointMake(CGRectGetWidth(self.bounds) - edge.right,CGRectGetHeight(self.bounds)- width -  edge.bottom - pixelAdjustOffset)];
     }
     
     if (postion & CTLinePositionLeft) {

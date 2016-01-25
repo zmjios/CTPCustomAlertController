@@ -24,6 +24,8 @@ typedef NS_ENUM(NSInteger,CTLinePosition) {
 
 - (void)drawLineInPosition:(CTLinePosition)postion color:(UIColor *)color;
 
+- (void)drawLineInPosition:(CTLinePosition)postion edge:(UIEdgeInsets)edge;
+
 - (void)drawLineInPosition:(CTLinePosition)postion color:(UIColor *)color width:(CGFloat)width;
 
 - (void)drawLineInPosition:(CTLinePosition)postion color:(UIColor *)color  edge:(UIEdgeInsets)edge;

@@ -13,6 +13,7 @@
 
 @property (nonatomic, strong) UIView *topLine;
 @property (nonatomic, strong) UIView *bottomLine;
+@property (nonatomic, strong) UIView *middleView;
 
 @end
 
@@ -37,9 +38,9 @@
         [self addSubview:self.topLine];
         [self addSubview:self.bottomLine];
         
-        UIView *middleView = [[UIView alloc] initWithFrame:tableView.frame];
-        middleView.backgroundColor = [UIColor whiteColor];
-        [self addSubview:middleView];
+        self.middleView = [[UIView alloc] initWithFrame:tableView.frame];
+        self.middleView.backgroundColor = [UIColor whiteColor];
+        [self addSubview:self.middleView];
 
     }
     
@@ -51,11 +52,10 @@
 {
     CGRect convertRect = [self convertRect:toView.middleView.frame fromView:toView];
     
-    NSLog(@"=======toView:%@",NSStringFromCGRect(toView.frame));
-    NSLog(@"=======%@",NSStringFromCGRect(convertRect));
-    
     self.topLine.minY = CGRectGetMinY(convertRect) - 1;
     self.bottomLine.minY = CGRectGetMaxY(convertRect) - 1;
+    
+    self.middleView.frame = convertRect;
 }
 
 @end

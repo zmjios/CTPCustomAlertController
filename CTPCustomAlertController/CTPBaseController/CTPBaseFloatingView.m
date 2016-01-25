@@ -80,6 +80,7 @@
     [self setBackgroundColor:CTColorHex(0xf0f0f0)];
     self.layer.cornerRadius = 5.0;
     
+    self.middleView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.middleView.height = 44*[self.dataSource floatingViewNumberOfRows];
     [_middleView layoutRelativeOptions:UIViewLayoutBelow withView:self.topContainerView];
     [_bottomContainerView layoutRelativeOptions:UIViewLayoutBelow withView:self.middleView];
@@ -95,7 +96,7 @@
     [self addSubview:_topContainerView];
     
     _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 5, _topContainerView.width -  20, 20)];
-    _titleLabel.backgroundColor = [UIColor redColor];
+    _titleLabel.backgroundColor = [UIColor clearColor];
     _titleLabel.textAlignment = NSTextAlignmentCenter;
     [self.topContainerView addSubview:_titleLabel];
     
@@ -111,14 +112,14 @@
         
         UIButton *leftButton = [self.dataSource topLeftItem:self];
         [self.topContainerView addSubview:leftButton];
-        leftButton.frame = CGRectMake(10, 10, 60, 60);
+        leftButton.frame = CGRectMake(10, 5, 60, 60);
         //[leftButton addTarget:self action:@selector(goBackAction:) forControlEvents:UIControlEventTouchUpInside];
     }
 }
 
 - (void)addMiddleContainerView
 {
-    _middleView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width - 20, 0) style:UITableViewStylePlain];
+    _middleView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width - 20, 0) style:UITableViewStyleGrouped];
     _middleView.delegate = self;
     _middleView.dataSource = self;
     _middleView.backgroundView = nil;
@@ -151,7 +152,18 @@
 {
     [super layoutSubviews];
 
-    
+}
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+    return CGFLOAT_MIN;
+}
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return CGFLOAT_MIN;
 }
 
 
@@ -193,6 +205,14 @@
 }
 
 
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (self.dataSource && [self.dataSource respondsToSelector:@selector(floatingView:willDisplayCell:forIndexPath:)]) {
+        [self.dataSource floatingView:self willDisplayCell:cell forIndexPath:indexPath];
+    }
+}
+
+
 
 #pragma mark - action
 - (void)goBackAction:(id)sender
@@ -201,6 +221,7 @@
         self.topLeftAction();
     }
 }
+
 
 
 
