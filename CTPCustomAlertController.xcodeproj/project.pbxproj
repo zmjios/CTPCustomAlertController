@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C5111431C55B7CD00E0BA9A /* UIView+RelativeLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5111421C55B7CD00E0BA9A /* UIView+RelativeLayout.m */; };
+		7C5111461C55BC1800E0BA9A /* CTPHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5111451C55BC1800E0BA9A /* CTPHomeController.m */; };
+		7C51114C1C55BF4200E0BA9A /* CTPFingerPrinterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C51114B1C55BF4200E0BA9A /* CTPFingerPrinterController.m */; };
+		7C51114F1C55DD6C00E0BA9A /* UIView+CTLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C51114E1C55DD6C00E0BA9A /* UIView+CTLine.m */; };
+		7C5111551C55E4EC00E0BA9A /* CTPSmoothFloatingAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5111541C55E4EC00E0BA9A /* CTPSmoothFloatingAnimation.m */; };
+		7C51115B1C55F08700E0BA9A /* UITableView+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C51115A1C55F08700E0BA9A /* UITableView+Util.m */; };
+		7C51115E1C56046C00E0BA9A /* CTPFloatingScreenshootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C51115D1C56046C00E0BA9A /* CTPFloatingScreenshootView.m */; };
 		7CC0593C1C4F6D9A00CA4012 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC0593B1C4F6D9A00CA4012 /* main.m */; };
 		7CC0593F1C4F6D9A00CA4012 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC0593E1C4F6D9A00CA4012 /* AppDelegate.m */; };
 		7CC059421C4F6D9A00CA4012 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC059411C4F6D9A00CA4012 /* ViewController.m */; };
@@ -56,6 +63,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7C5111411C55B7CD00E0BA9A /* UIView+RelativeLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RelativeLayout.h"; sourceTree = "<group>"; };
+		7C5111421C55B7CD00E0BA9A /* UIView+RelativeLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RelativeLayout.m"; sourceTree = "<group>"; };
+		7C5111441C55BC1800E0BA9A /* CTPHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTPHomeController.h; sourceTree = "<group>"; };
+		7C5111451C55BC1800E0BA9A /* CTPHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTPHomeController.m; sourceTree = "<group>"; };
+		7C51114A1C55BF4200E0BA9A /* CTPFingerPrinterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTPFingerPrinterController.h; sourceTree = "<group>"; };
+		7C51114B1C55BF4200E0BA9A /* CTPFingerPrinterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTPFingerPrinterController.m; sourceTree = "<group>"; };
+		7C51114D1C55DD6C00E0BA9A /* UIView+CTLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CTLine.h"; sourceTree = "<group>"; };
+		7C51114E1C55DD6C00E0BA9A /* UIView+CTLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CTLine.m"; sourceTree = "<group>"; };
+		7C5111531C55E4EC00E0BA9A /* CTPSmoothFloatingAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTPSmoothFloatingAnimation.h; sourceTree = "<group>"; };
+		7C5111541C55E4EC00E0BA9A /* CTPSmoothFloatingAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTPSmoothFloatingAnimation.m; sourceTree = "<group>"; };
+		7C5111591C55F08700E0BA9A /* UITableView+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Util.h"; sourceTree = "<group>"; };
+		7C51115A1C55F08700E0BA9A /* UITableView+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Util.m"; sourceTree = "<group>"; };
+		7C51115C1C56046C00E0BA9A /* CTPFloatingScreenshootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTPFloatingScreenshootView.h; sourceTree = "<group>"; };
+		7C51115D1C56046C00E0BA9A /* CTPFloatingScreenshootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTPFloatingScreenshootView.m; sourceTree = "<group>"; };
 		7CC059371C4F6D9A00CA4012 /* CTPCustomAlertController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CTPCustomAlertController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CC0593B1C4F6D9A00CA4012 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7CC0593D1C4F6D9A00CA4012 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -247,12 +268,24 @@
 		7CC059BF1C50AE3100CA4012 /* CTPBaseController */ = {
 			isa = PBXGroup;
 			children = (
+				7C51114D1C55DD6C00E0BA9A /* UIView+CTLine.h */,
+				7C51114E1C55DD6C00E0BA9A /* UIView+CTLine.m */,
+				7C5111411C55B7CD00E0BA9A /* UIView+RelativeLayout.h */,
+				7C5111421C55B7CD00E0BA9A /* UIView+RelativeLayout.m */,
+				7C5111591C55F08700E0BA9A /* UITableView+Util.h */,
+				7C51115A1C55F08700E0BA9A /* UITableView+Util.m */,
 				7CC059C61C50CE6E00CA4012 /* CTPBaseFloatingView.h */,
 				7CC059C71C50CE6E00CA4012 /* CTPBaseFloatingView.m */,
+				7C51115C1C56046C00E0BA9A /* CTPFloatingScreenshootView.h */,
+				7C51115D1C56046C00E0BA9A /* CTPFloatingScreenshootView.m */,
+				7C5111441C55BC1800E0BA9A /* CTPHomeController.h */,
+				7C5111451C55BC1800E0BA9A /* CTPHomeController.m */,
 				7CC059CC1C50E0E200CA4012 /* CTPHomeFloatingView.h */,
 				7CC059CD1C50E0E200CA4012 /* CTPHomeFloatingView.m */,
 				7CC059DF1C51FA9E00CA4012 /* CTPFingerPrinterFloatingView.h */,
 				7CC059E01C51FA9E00CA4012 /* CTPFingerPrinterFloatingView.m */,
+				7C51114A1C55BF4200E0BA9A /* CTPFingerPrinterController.h */,
+				7C51114B1C55BF4200E0BA9A /* CTPFingerPrinterController.m */,
 				7CC059DB1C51F0FD00CA4012 /* CTPFloatingDefine.h */,
 				7CC059CF1C51C21400CA4012 /* CTBaseFloatingController.h */,
 				7CC059D01C51C21400CA4012 /* CTBaseFloatingController.m */,
@@ -260,6 +293,8 @@
 				7CC059D31C51CCF500CA4012 /* CTPFloatingViewController.m */,
 				7CC059D81C51EFAE00CA4012 /* CTPPopUpFloatingAnimation.h */,
 				7CC059D91C51EFAE00CA4012 /* CTPPopUpFloatingAnimation.m */,
+				7C5111531C55E4EC00E0BA9A /* CTPSmoothFloatingAnimation.h */,
+				7C5111541C55E4EC00E0BA9A /* CTPSmoothFloatingAnimation.m */,
 				7CC059E21C5206C700CA4012 /* CTPAnimationContext.h */,
 				7CC059E31C520A1E00CA4012 /* CTPAnimationInnerContext.h */,
 				7CC059E41C520A1E00CA4012 /* CTPAnimationInnerContext.m */,
@@ -398,13 +433,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C5111431C55B7CD00E0BA9A /* UIView+RelativeLayout.m in Sources */,
 				7CC059BD1C509B9A00CA4012 /* SecondViewController.m in Sources */,
 				7CC059D11C51C21400CA4012 /* CTBaseFloatingController.m in Sources */,
+				7C5111551C55E4EC00E0BA9A /* CTPSmoothFloatingAnimation.m in Sources */,
 				7CC059DE1C51FA4200CA4012 /* CTPFloatingFastViewController.m in Sources */,
+				7C5111461C55BC1800E0BA9A /* CTPHomeController.m in Sources */,
 				7CC059C81C50CE6E00CA4012 /* CTPBaseFloatingView.m in Sources */,
 				7CC059851C4F7D1400CA4012 /* CTPAlertScaleFadeAnimation.m in Sources */,
 				7CC059D41C51CCF500CA4012 /* CTPFloatingViewController.m in Sources */,
 				7CC059E11C51FA9E00CA4012 /* CTPFingerPrinterFloatingView.m in Sources */,
+				7C51114C1C55BF4200E0BA9A /* CTPFingerPrinterController.m in Sources */,
 				7CC059421C4F6D9A00CA4012 /* ViewController.m in Sources */,
 				7CC059CE1C50E0E200CA4012 /* CTPHomeFloatingView.m in Sources */,
 				7CC059821C4F7AC600CA4012 /* CTPPopUpAnimation.m in Sources */,
@@ -413,11 +452,14 @@
 				7CC0593F1C4F6D9A00CA4012 /* AppDelegate.m in Sources */,
 				7CC059B41C5088FE00CA4012 /* CTPNaviagtionController.m in Sources */,
 				7CC059B71C5089B200CA4012 /* CTPNaviagtionController+TransitionAnimation.m in Sources */,
+				7C51114F1C55DD6C00E0BA9A /* UIView+CTLine.m in Sources */,
 				7CC0597C1C4F780100CA4012 /* UIView+CTPAutoLayout.m in Sources */,
 				7CC059E51C520A1E00CA4012 /* CTPAnimationInnerContext.m in Sources */,
+				7C51115B1C55F08700E0BA9A /* UITableView+Util.m in Sources */,
 				7CC0593C1C4F6D9A00CA4012 /* main.m in Sources */,
 				7CC0598E1C4F83A900CA4012 /* UIView+CTPUtil.m in Sources */,
 				7CC0598B1C4F7F5400CA4012 /* CTPAlertView.m in Sources */,
+				7C51115E1C56046C00E0BA9A /* CTPFloatingScreenshootView.m in Sources */,
 				7CC059881C4F7E6900CA4012 /* CTPAlertDropAnimation.m in Sources */,
 				7CC059791C4F764100CA4012 /* CTPCustomAlertController+TransitionAnimation.m in Sources */,
 				7CC059DA1C51EFAE00CA4012 /* CTPPopUpFloatingAnimation.m in Sources */,
@@ -646,6 +688,7 @@
 				7CC059661C4F6D9A00CA4012 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7CC059671C4F6D9A00CA4012 /* Build configuration list for PBXNativeTarget "CTPCustomAlertControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -654,6 +697,7 @@
 				7CC059691C4F6D9A00CA4012 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7CC0596A1C4F6D9A00CA4012 /* Build configuration list for PBXNativeTarget "CTPCustomAlertControllerUITests" */ = {
 			isa = XCConfigurationList;
@@ -662,6 +706,7 @@
 				7CC0596C1C4F6D9A00CA4012 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

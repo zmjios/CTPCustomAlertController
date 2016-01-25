@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+//#import "CTBaseFloatingController.h"
 
 
 /**
@@ -21,15 +22,22 @@ typedef NS_ENUM(NSInteger,CTPFloatingViewType) {
     CTPFloatingViewBankList = 3,
 };
 
+@class CTBaseFloatingController;
+@protocol CTPBaseFloatingViewDelegate;
+@protocol CTPBaseFloatingViewDataSource;
 
-@protocol CTPBaseShowViewDelegate;
-@protocol CTPBaseShowViewDataSource;
+@interface CTPBaseFloatingView : UIView<UITableViewDataSource,UITableViewDelegate>
 
-@interface CTPBaseFloatingView : UIView
+@property (nonatomic, strong, readonly) UIView *topContainerView;
+@property (nonatomic, strong, readonly) UITableView *middleView;
+@property (nonatomic, strong, readonly) UIView *bottomContainerView;
+@property (nonatomic, strong, readonly) UIView *describeInfoView;
+
+@property (nonatomic, strong) CTBaseFloatingController *controller;
 
 //delegate
-@property (nonatomic, weak) id <CTPBaseShowViewDelegate> delegate;
-@property (nonatomic, weak) id <CTPBaseShowViewDataSource> dataSource;
+@property (nonatomic, weak) id <CTPBaseFloatingViewDelegate> delegate;
+@property (nonatomic, weak) id <CTPBaseFloatingViewDataSource> dataSource;
 
 //dataSource
 @property (nonatomic, copy) void (^topLeftAction)(void);
@@ -37,9 +45,13 @@ typedef NS_ENUM(NSInteger,CTPFloatingViewType) {
 @property (nonatomic, copy) void (^bottomAction)(void);
 @property (nonatomic, copy) void (^didSelectedAction)(NSInteger row);
 
-+ (instancetype)floatingViewWithType:(CTPFloatingViewType)type;
+//+ (CTPBaseFloatingView *)floatingViewWithType:(CTPFloatingViewType)type;
+
+
+- (instancetype)initWithController:(CTBaseFloatingController *)controller;
 
 @end
+
 
 
 @protocol CTPBaseFloatingViewDelegate <NSObject>
@@ -47,25 +59,30 @@ typedef NS_ENUM(NSInteger,CTPFloatingViewType) {
 @optional
 - (void)floatingView:(CTPBaseFloatingView *)floatingView didSelectRowAtIndex:(NSIndexPath *)indexPath;
 
-- (void)floatingViewWithBottomAction:(CTPBaseFloatingView *)showView;
+- (void)floatingViewWithBottomAction:(CTPBaseFloatingView *)floatingView;
 
-- (CGFloat)floatingVie:(CTPBaseFloatingView *)floatingView heightForRowAtIndexPath:(NSIndexPath *)indexPath;
 
 @end
 
 
 @protocol CTPBaseFloatingViewDataSource <NSObject>
 
+- (UITableViewCell *)floatingView:(CTPBaseFloatingView *)floatingView cellForRowAtIndex:(NSIndexPath *)indexPath;
+
 @optional
-- (NSString *)showViewTopMiddleInfoItem;
+- (NSString *)floatingViewTopMiddleInfoItem;
+- (CGFloat)topViewHeight:(CTPBaseFloatingView *)floatingView;
+
+- (UIButton *)topLeftItem:(CTPBaseFloatingView *)floatingView;
+
+- (NSInteger)floatingViewNumberOfRows;
+- (CGFloat)floatingView:(CTPBaseFloatingView *)floatingView heightForRowAtIndexPath:(NSIndexPath *)indexPath;
+- (UIView *)floatingViewBottomSubView:(CTPBaseFloatingView *)floatingView;
+
+- (NSString *)floatingViewBottomInfo:(CTPBaseFloatingView *)floatingView;
 
 
-- (NSInteger)showViewNumberOfRows;
-- (UITableViewCell *)floatingView:(CTPBaseFloatingView *)showView cellForRowAtIndex:(NSIndexPath *)indexPath;
-- (UIView *)floatingViewBottomSubView:(CTPBaseFloatingView *)showView;
 
-
-- (NSString *)floatingViewBottomInfo:(CTPBaseFloatingView *)showView;
 
 
 

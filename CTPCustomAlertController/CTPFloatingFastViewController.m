@@ -9,8 +9,7 @@
 #import "CTPFloatingFastViewController.h"
 #import "CTPHomeFloatingView.h"
 #import "CTPFingerPrinterFloatingView.h"
-
-
+#import "CTPHomeController.h"
 
 @interface CTPFloatingFastViewController ()
 
@@ -23,20 +22,13 @@
     // Do any additional setup after loading the view.
     
     
-    self.view.backgroundColor = [UIColor orangeColor];
+    self.view.backgroundColor = [UIColor whiteColor];
     
-    
-    CTPHomeFloatingView *homeView = [[CTPHomeFloatingView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
-    homeView.backgroundColor = [UIColor redColor];
-    
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [button setTitle:@"TEST" forState:UIControlStateNormal];
-    button.frame = CGRectMake(50, 50, 100, 100);
-    [button addTarget:self action:@selector(showSecondView) forControlEvents:UIControlEventTouchUpInside];
-    [homeView addSubview:button];
-    
-    
+    CTPHomeController *homeController = [[CTPHomeController alloc] init];
+    homeController.rootViewController = self;
+    CTPHomeFloatingView *homeView = [[CTPHomeFloatingView alloc] initWithController:homeController];
+
+
     [self.backgroundView addSubview:homeView];
     self.topView = homeView;
     [self.viewList addObject:homeView];

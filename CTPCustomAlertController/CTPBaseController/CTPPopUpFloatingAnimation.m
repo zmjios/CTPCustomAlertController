@@ -43,7 +43,7 @@
                          //show push view
                          [containerView addSubview:toView];
                          viewController.topView = toView;
-                         [viewController layoutTopView];
+                        [viewController layoutTopView];
                          
                          
                          toView.layer.transform = CATransform3DMakeScale(1.2f, 1.2f, 1.0f);

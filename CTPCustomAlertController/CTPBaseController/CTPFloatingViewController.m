@@ -9,7 +9,7 @@
 #import "CTPFloatingViewController.h"
 #import "UIView+CTPAutoLayout.h"
 #import "CTPPopUpFloatingAnimation.h"
-
+#import "CTPSmoothFloatingAnimation.h"
 #import "CTPAnimationInnerContext.h"
 
 @interface CTPFloatingViewController ()
@@ -104,8 +104,6 @@
     
     [self.viewList addObject:floatingView];
     
-    
-    
     [self showAnimationFromView:currentView toView:floatingView animationType:animationType];
 }
 
@@ -175,6 +173,20 @@
     return [self popToView:toView animated:YES];
 }
 
+// If animated is YES, then simulate a push or pop depending on whether the new top view controller was previously in the stack.
+- (void)setViewList:(NSMutableArray<__kindof CTPBaseFloatingView *> *)viewList animated:(BOOL)animated
+{
+    CTPBaseFloatingView *oldTopView = self.topView;
+    CTPBaseFloatingView *anewTopView = viewList.lastObject;
+    
+    [self.viewList removeAllObjects];
+    [_viewList addObjectsFromArray:viewList];
+    
+    if (animated) {
+        [self showAnimationFromView:oldTopView toView:anewTopView animationType:self.animationType];
+    }
+}
+
 
 #pragma mark - lifecycle
 - (void)viewDidLoad {
@@ -200,10 +212,10 @@
 - (void)layoutTopView
 {
     // center X
-    self.topView.translatesAutoresizingMaskIntoConstraints = NO;
+    //self.topView.translatesAutoresizingMaskIntoConstraints = NO;
     [self.backgroundView addConstraintCenterXToView:self.topView CenterYToView:nil];
     _topViewCenterYConstraint = [self.backgroundView addConstraintCenterYToView:self.topView constant:0];
-     [self.topView addConstarintWidth:CGRectGetWidth(self.topView.frame) height:CGRectGetHeight(self.topView.frame)];
+     //[self.topView addConstarintWidth:CGRectGetWidth(self.topView.frame) height:CGRectGetHeight(self.topView.frame)];
 }
 
 #pragma mark - action
@@ -285,10 +297,14 @@
    
     id<CTPAnimatedTransitioning> animation = nil;
     if (self.transtionViewDelegate && [self.transtionViewDelegate respondsToSelector:@selector(floatingViewController:animationViewForOperation:fromView:toView:)]) {
-       animation =  [self.transtionViewDelegate floatingViewController:self animationViewForOperation:self.operation fromView:fromView toView:toView];
+       animation = [self.transtionViewDelegate floatingViewController:self animationViewForOperation:self.operation fromView:fromView toView:toView];
     }else
     {
-        animation = [[CTPPopUpFloatingAnimation alloc] init];
+        //animation = [[CTPPopUpFloatingAnimation alloc] init];
+        
+        animation = [[CTPSmoothFloatingAnimation alloc] init];
+        
+        //todo switch
     }
     
     [animation animateTransition:context];
@@ -332,19 +348,6 @@
     [self layoutTopView];
 }
 
-// If animated is YES, then simulate a push or pop depending on whether the new top view controller was previously in the stack.
-- (void)setViewList:(NSMutableArray<__kindof CTPBaseFloatingView *> *)viewList animated:(BOOL)animated
-{
-    CTPBaseFloatingView *oldTopView = self.topView;
-    CTPBaseFloatingView *anewTopView = viewList.lastObject;
-    
-    [self.viewList removeAllObjects];
-    [_viewList addObjectsFromArray:viewList];
-    
-    if (animated) {
-        [self showAnimationFromView:oldTopView toView:anewTopView animationType:self.animationType];
-    }
-}
 
 
 @end

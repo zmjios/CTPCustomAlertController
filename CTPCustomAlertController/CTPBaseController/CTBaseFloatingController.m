@@ -8,6 +8,13 @@
 
 #import "CTBaseFloatingController.h"
 
+@interface CTBaseFloatingController ()
+
+
+@end
+
 @implementation CTBaseFloatingController
+
+
 
 @end
